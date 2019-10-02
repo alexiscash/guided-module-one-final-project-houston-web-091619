@@ -10,13 +10,15 @@ electives_hash = data['subjects']['electives']
 students_array = data['students']
 professors_array = data['professors']
 
-students_array.each do |student|
-    Student.create(name: student.titleize, grade: rand(9..12))
-end
 
 71.times do |i|
     Student.create(name: Faker::Name.name, grade: rand(9..12))
 end
+
+students_array.reverse.each do |student|
+    Student.create(name: student.titleize, grade: rand(9..12))
+end
+
 
 professors_array.each do |prof|
     Classroom.create(professor: prof.titleize, name: "a#{rand(100..234)}")

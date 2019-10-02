@@ -7,4 +7,5 @@ class Subject < ActiveRecord::Base
             i.name
         end
     end
+
 end

@@ -1,6 +1,6 @@
 require_relative 'config/environment'
 require_relative 'bin/run'
-require_relative 'bin/test'
+# require_relative 'bin/test'
 require 'sinatra/activerecord/rake'
 
 
@@ -16,5 +16,5 @@ end
 
 desc 'run the dumb test stuff'
 task :test do 
-  test
+  require_relative 'bin/test'
 end

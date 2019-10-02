@@ -1,7 +1,7 @@
 require_relative '../config/environment.rb'
 
 def run
-    Catpix.print_image('/Users/flatironstudent/Desktop/projects/guided-module-one-final-project-houston-web-091619/bin/monster_high.jpg')
+    # Catpix.print_image('/Users/flatironstudent/Desktop/projects/guided-module-one-final-project-houston-web-091619/bin/monster_high.jpg')
     $prompt = TTY::Prompt.new
     greet
     loop do 
@@ -9,7 +9,7 @@ def run
         if answer == 'New_Student'
             add_new_user
         elsif answer == 'Students'
-            $prompt.select('which student', Student.names)
+            get_students
         elsif answer == 'Classrooms'
             $prompt.select('Which Classroom?', Classroom.names)
         elsif answer == 'Subjects'
@@ -45,13 +45,29 @@ def add_new_user
     name = $prompt.ask("What is your name?")
     space
     puts "#{name}. very cool"
-    grade = $prompt.ask("What grade are you in?")
+    grade = $prompt.ask("What grade are you in? (integer)")
     space
     puts "#{grade}. Nice"
     Student.create(name: name, grade: grade)
 end
 
-
+def get_students
+    space
+    student = $prompt.select('Which Student?', Student.names.reverse)
+    space
+    # puts Student.find_by(name: student).schedule
+    # space
+    box = TTY::Box.frame(
+    width: 30,
+    height: 10,
+    align: :center,
+    padding: 2,
+    title: {top_left: 'SCHEDULE', bottom_right: 'ayyy'}
+    ) do
+        Student.find_by(name: student).schedule
+    end
+    print box
+end
 
 
 

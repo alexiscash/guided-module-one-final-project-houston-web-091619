@@ -8,4 +8,12 @@ require_relative '../config/environment.rb'
 #     puts "#{k}: #{v}"
 # end
 
-
+box = TTY::Box.frame(
+    width: 30,
+    height: 10,
+    align: :center,
+    padding: 3
+    ) do
+    puts 'hello'
+end
+print box

@@ -1,17 +1,28 @@
 subjects:
   core_classes:
-    - biteology
-    - clawculus
-    - dragonomics
-    - advanced scream tactics
-    - history of scaring
-    - scream energy
-    - family pets
+    biteology:
+      'description'
+    clawculus:
+      ''
+    dragonomics:
+      ''
+    advanced scream tactics:
+      ''
+    history of scaring:
+      ''
+    scream energy:
+      ''
+    family pets:
+      ''
   electives:
-    - art
-    - sports
-    - band
-    - computer science
+    art:
+      ''
+    sports:
+      ''
+    band:
+      ''
+    computer science:
+      ''
 
 students:
   - sully
@@ -27,6 +38,23 @@ students:
   - male pattern baldness
   - succ..ubus
   - dat boi jason
+  - vampburte
+  - vaporsnake
+  - slagfreak
+  - grievesword
+  - auratooth
+  - dreadling
+  - metalspawn
+  - warpcreep
+  - thornbug
+  - grieveflayer
+  - shadowbeast
+  - sorrowtree
+  - bladebrute
+  - bonefang
+  - mournmirage
+  - soilmutant
+
 
 professors:
   - dr. sexy

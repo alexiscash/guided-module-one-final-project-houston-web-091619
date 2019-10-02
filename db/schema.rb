@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2019_09_30_203648) do
 
   create_table "subjects", force: :cascade do |t|
     t.string "name"
+    t.text "description"
     t.integer "student_id"
     t.integer "classroom_id"
   end

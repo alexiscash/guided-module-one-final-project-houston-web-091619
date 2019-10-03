@@ -4,20 +4,26 @@ def run
     # Catpix.print_image('/Users/flatironstudent/Desktop/projects/guided-module-one-final-project-houston-web-091619/bin/monster_high.jpg')
     $prompt = TTY::Prompt.new
     greet
+    menu
+    puts 'Goodbye.'
+end
+
+def menu
     loop do 
-        answer = $prompt.select('Main Menu', %w(New_Student Students Classrooms Subjects Quit))
+        answer = $prompt.select('Main Menu', %w(New_Student Find_Student Students Classrooms Subjects Quit))
         if answer == 'New_Student'
             add_new_user
         elsif answer == 'Students'
             get_students
         elsif answer == 'Classrooms'
-            $prompt.select('Which Classroom?', Classroom.names)
+            get_classrooms
+            # $prompt.select('Which Classroom?', Classroom.names)
         elsif answer == 'Subjects'
-            $prompt.select('Which subject?', Subject.names)
+            get_subjects
+            # $prompt.select('Which subject?', Subject.names)
         end
         break if answer == 'Quit'
     end
-    puts 'Goodbye you bitch'
 end
 
 def greet
@@ -69,6 +75,17 @@ def get_students
     print box
 end
 
+def find_student
+    space
+end
+
+def get_classrooms
+    room = $prompt.select('Which Classroom?', Classroom.names)
+    puts Classroom.find_by(name:room).prof
+end
+
+def get_subjects
+end
 
 
 

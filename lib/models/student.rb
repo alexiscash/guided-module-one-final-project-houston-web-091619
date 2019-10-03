@@ -14,7 +14,9 @@ class Student < ActiveRecord::Base
         4.times do |i|
             arr << "#{Subject.all.sample.name} #{self.grade_suffix(self.grade)}"
         end
-        arr.to_s
+        string = ''
+        arr.each { |i| string += "#{i} \n"}
+        string
     end
 
     def grade_suffix(grade)

@@ -1,0 +1,66 @@
+subjects:
+  core_classes:
+    biteology:
+      "Biteology is one of the cornertomb classes at Monster High. Students will be introduced to foundational concepts such as the mad biteology method, creepology, the law of claws and effect as well as the theory of 'What Goes Bump in the Night?' We also have field trip to the catacombs and students must have a permission slip signed by a parent or goredian to participate in the field trip."
+    clawculus:
+      'With our great clawculus teachers, we can guarantee that that the only thing you need to be worried about is the students sitting next to you.'
+    dragonomics:
+      'In a world full of monsters it's important to know what's happening in the world around you. Dragonomics teaches students how read charts and analyze the importance of scarcity and opportunity costs in dragonomics.'
+    history of scaring:
+      'This is the largest and oldest building on the campus. It is easily distinguished by its large green dome.'
+  electives:
+    family pets:
+      'Family pets as a monster may seem scary, loud, and aggressive but you don't need to worry, in Family Pets you'll learn how to face these animals head on and stop living in fear.'
+    advanced scream tactics:
+      'Be meaner! Be tougher! Be Louder! Your ability to scream will peak after this class.'
+    scream energy:
+      'Bring energy to your scream by taking our brand new class Scream Energy.'
+
+students:
+  - sully
+  - mike wakowski
+  - clawdeena
+  - draculaura
+  - kenny
+  - scarewolf
+  - tommy knocker
+  - dawnboy
+  - slagstep
+  - crotchbone
+  - male pattern baldness
+  - succ..ubus
+  - dat boi jason
+  - vampburte
+  - vaporsnake
+  - slagfreak
+  - grievesword
+  - auratooth
+  - dreadling
+  - metalspawn
+  - warpcreep
+  - thornbug
+  - grieveflayer
+  - shadowbeast
+  - sorrowtree
+  - bladebrute
+  - bonefang
+  - mournmirage
+  - soilmutant
+
+classrooms:
+  core classroom:
+    101: 
+      Dr.Sexy
+    102:
+      Coach Feratu
+    103:
+      Mr.Frank
+    104:
+      Mrs.Gromble
+  electives classroom:
+    105: 
+      Mr.Chomble
+    107:
+      Mr.Bomble
+    108:
+      Coach Oblina

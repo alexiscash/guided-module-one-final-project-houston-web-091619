@@ -8,5 +8,7 @@ gem "pry"
 gem "require_all"
 gem "tty-prompt"
 gem "tty-box"
+gem "tty-cursor"
 gem "catpix"
 gem "faker"
+
